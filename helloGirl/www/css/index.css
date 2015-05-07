@@ -113,3 +113,109 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #274D8A;
+    z-index: 1000;
+}
+
+.title {
+    display: inline-block;
+    color: white;
+    font-family: Lobster;
+    font-size: 40px;
+    margin-left: 300px;
+    margin-top: 17px;
+}
+
+.logo { /* floats logo left */
+    float: left;
+    margin-top: 8px;
+    height: 70px;
+    width: 70px;
+}
+
+.instructions_container {
+    background-color: lightblue;
+    color: navy;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-top: -40px;
+    border-bottom: 1px solid #333;
+    box-shadow: 2px 2px 40px #000;
+}
+
+.main_container {
+    margin-top: 115px;
+    width: 102%;
+    margin-left: -8px;
+    background-color: #FFDDEE;
+    color: #B2246B;
+}
+
+
+.col_3 {
+    height: 630px;
+    width: 32.5%;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+.main_container .item img {
+    width: 300px;
+    height: 300px;
+    margin-left: -45px;
+}
+
+.item_div {
+    float: left;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.col_2 {
+    width: 48%;
+    height: 628px;
+    overflow: scroll;
+    border: 2px solid black;
+}
+
+.clothing_div {
+    float: left;
+    margin-right: 5.5px;
+}
+
+.doll_div {
+    margin-left: 7px;
+}
+
+.doll_image img {
+    width: 350px;
+    height: 350px;
+}
+
+.code_div {
+    float: right;
+    overflow: scroll;
+}
+
+.code_div ul{
+    list-style: none;
+}
