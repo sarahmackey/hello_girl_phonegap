@@ -30,7 +30,7 @@
         -->
         <meta charset="utf-8" />
     <title>Hello, Girl</title>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width height=device-height"/>
 
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -72,7 +72,7 @@
 
     <!-- Start of Instructions Container -->
      <div class="instructions_container">
-       <p>Instructions: Below, choose your doll and you can dress them up in shirts and pants. Then, you can add lips or hair! After your changes are made, the code will display to the right of your doll to show you how your changes will look in python code!</p>
+       <p>Instructions: Below, choose your doll and you can dress them up in shirts and pants. Then, you can add lips or hair! After your changes are made, the  will display to the right of your doll to show you how your changes will look in python code!</p>
      </div>
      <!-- End of Instructions Container -->
   </header>
@@ -82,7 +82,7 @@
 
     <!-- Start of Item Container -->
     <div class="col_3 item_div">
-      <div class="col_2 clothing_div center_text">
+      <div class="col_2 clothing_div center_text scrollable">
         <p>Your Clothing Options</p>
 
         <div class="option-container item">
@@ -95,72 +95,73 @@
               <img src="images/mediumLightDoll.png" onclick='changeImage("images/mediumLightDoll.png"); changeWord("White","word_skin");'/>
             </div>
 
-        <div class="draggable">
-              <div class="draggable item"><img src="images/greenshirt.png" onclick='changeWord("Green Shirt","word_shirt");'/></div>
+        <div class="clickable">
+              <div class="clickable item"><img src="images/greenshirt.png" onclick='changeTop("images/greenshirt.png"); changeWord("Green Shirt","word_shirt");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/darkBlueShirt.png" onclick='changeWord("Dark Blue Shirt","word_shirt");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/darkBlueShirt.png" onclick='changeTop("images/darkBlueShirt.png"); changeWord("Dark Blue Shirt","word_shirt");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/lightBlueShirt.png" onclick='changeWord("Light Blue Shirt","word_shirt");'/></div>
+
+            <div class="clickable">
+              <div class="clickable item"><img src="images/lightBlueShirt.png" onclick='changeTop("images/lightBlueShirt.png"); changeWord("Light Blue Shirt","word_shirt");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/pinkShirt.png" onclick='changeWord("Pink Shirt","word_shirt");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/pinkShirt.png" onclick='changeTop("images/pinkShirt.png"); changeWord("Pink Shirt","word_shirt");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/blackPants.png" onclick='changeWord("Black Pants","word_bottoms");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/blackPants.png" onclick='changeBottom("images/blackPants.png"); changeWord("Black Pants","word_bottoms");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/bluePants.png" onclick='changeWord("Blue Pants","word_bottoms");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/bluePants.png" onclick='changeBottom("images/bluePants.png"); changeWord("Blue Pants","word_bottoms");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/khakiPants.png" onclick='changeWord("Khaki Pants","word_bottoms");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/khakiPants.png" onclick='changeBottom("images/khakiPants.png"); changeWord("Khaki Pants","word_bottoms");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/jeans.png" onclick='changeWord("Jeans","word_bottoms");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/jeans.png" onclick='changeBottom("images/jeans.png"); changeWord("Jeans","word_bottoms");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/redSkirt.png" onclick='changeWord("Red Skirt","word_bottoms");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/redSkirt.png" onclick='changeBottom("images/redSkirt.png"); changeWord("Red Skirt","word_bottoms");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/greenSkirt.png" onclick='changeWord("Green Skirt","word_bottoms");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/greenSkirt.png" onclick='changeBottom("images/greenSkirt.png"); changeWord("Green Skirt","word_bottoms");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/tutu.png" onclick='changeWord("Tutu","word_bottoms");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/tutu.png" onclick='changeBottom("images/tutu.png"); changeWord("Tutu","word_bottoms");'/></div>
             </div>
       </div>
 
-      <div class="col_2 feature_div center_text">
+      <div class="col_2 feature_div center_text scrollable">
         <p>Your Feature Options</p>
-        <div class="draggable">
-              <div class="draggable item"><img src="images/blondeHair.png" onclick='changeWord("Blone Hair","word_hair");'/></div>
+        <div class="clickable">
+              <div class="clickable item"><img src="images/blondeHair.png" onclick='changeHair("images/blondeHair.png"); changeWord("Blone Hair","word_hair");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/RedAfro.png" onclick='changeWord("Red Afro","word_hair");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/RedAfro.png" onclick='changeHair("images/RedAfro.png"); changeWord("Red Afro","word_hair");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/brunetteHair.png" onclick='changeWord("Brunette","word_hair");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/brunetteHair.png" onclick='changeHair("images/brunetteHair.png"); changeWord("Brunette","word_hair");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/blueEyes.png" onclick='changeWord("Blue Eyes","word_eyes");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/blueEyes.png" onclick='changeEyes("images/blueEyes.png"); changeWord("Blue Eyes","word_eyes");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/brownEyes.png" onclick='changeWord("Brown Eyes","word_eyes");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/brownEyes.png" onclick='changeEyes("images/brownEyes.png"); changeWord("Brown Eyes","word_eyes");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/greenEyes.png" onclick='changeWord("Green Eyes","word_eyes");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/greenEyes.png" onclick='changeEyes("images/greenEyes.png"); changeWord("Green Eyes","word_eyes");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/nose.png"/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/nose.png" onclick='changeNose("images/nose.png");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/nudeLips.png" onclick='changeWord("Nude Lips","word_lips");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/nudeLips.png" onclick='changeLips("images/nudeLips.png"); changeWord("Nude Lips","word_lips");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/pinkLips.png" onclick='changeWord("Pink Lips","word_lips");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/pinkLips.png" onclick='changeLips("images/pinkLips.png"); changeWord("Pink Lips","word_lips");'/></div>
             </div>
-            <div class="draggable">
-              <div class="draggable item"><img src="images/redLips.png" onclick='changeWord("Red Lips","word_lips");'/></div>
+            <div class="clickable">
+              <div class="clickable item"><img src="images/redLips.png" onclick='changeLips("images/redLips.png"); changeWord("Red Lips","word_lips");'/></div>
             </div>
       </div>
       
@@ -172,17 +173,25 @@
     <!-- Start of Doll Container -->
     <div id="drop-area" class="col_3 doll_div center_text">
       <p>Your Doll</p>
-      <p>Drag your items onto your doll here!</p>
+      <p>Click on items to change your doll!</p>
       <div class="doll_image">
         <!-- id is used to capture the id of the image and change in main.js -->
         <img id="body_image" src="images/mediumLightDoll.png" />
+        <img id="top" src=""/>
+        <img id="bottom" src=""/>
+        <img id="eyes" src=""/>
+        <img id="nose" src=""/>
+        <img id="lips" src=""/>
+        <img id="hair" src=""/>
+
       </div>
+  
       
     </div> <!-- / doll_div -->
     <!-- End of Doll Container -->
 
     <!-- Start of Code Container -->
-    <div class="col_3 code_div">
+    <div class="col_3 code_div scrollable">
 
         <p>The code side...</p>
         <ul>
@@ -272,7 +281,7 @@
 
 <script>
     jQuery(document).ready(function($) {
-  
+  /*
       $('.draggable').draggable({
         helper: 'clone',
         cursor: 'move'
@@ -297,8 +306,39 @@
         }
 
       });
-      
+      */
     });
+
+
+    // Uses document because document will be topmost level in bubbling
+$(document).on('touchmove',function(e){
+  e.preventDefault();
+});
+
+var scrolling = false;
+
+// Uses body because jquery on events are called off of the element they are
+// added to, so bubbling would not work if we used document instead.
+$('body').on('touchstart','.scrollable',function(e) {
+
+    // Only execute the below code once at a time
+    if (!scrolling) {
+        scrolling = true;   
+        if (e.currentTarget.scrollTop === 0) {
+          e.currentTarget.scrollTop = 1;
+        } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
+          e.currentTarget.scrollTop -= 1;
+        }
+        scrolling = false;
+    }
+});
+
+// Prevents preventDefault from being called on document if it sees a scrollable div
+$('body').on('touchmove','.scrollable',function(e) {
+  e.stopPropagation();
+});
+ 
+
   </script>
 
 

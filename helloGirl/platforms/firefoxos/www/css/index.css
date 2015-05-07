@@ -65,8 +65,8 @@ header {
 
 .main_container {
     margin-top: 9.5%;
-    width: viewport.width;
-    height: viewport.height;
+    /*width: viewport.width;
+    height: viewport.height;*/
     /*margin-left: -8px;*/
     background-color: #FFDDEE;
     color: #B2246B;
@@ -79,6 +79,7 @@ header {
     display: inline-block;
     font-family: 'Playfair Display', serif;
     font-size: 16px;
+
 }
 
 .main_container .item img {
@@ -114,6 +115,40 @@ header {
 .doll_image img {
     width: 350px;
     height: 350px;
+}
+
+#body_image {
+    position: relative;
+}
+
+#top {
+    position: relative;
+    top: -355px;
+}
+
+#bottom {
+    position: relative;
+    top: -710px; /* 2x the size of the other images*/
+}
+
+#eyes{
+    position: relative;
+    top:-1065px;
+}
+
+#nose{
+    position: relative;
+    top:-1420px;
+}
+
+#lips{
+    position: relative;
+    top:-1775px;
+}
+
+#hair{
+    position: relative;
+    top:-2130px;
 }
 
 .code_div {
