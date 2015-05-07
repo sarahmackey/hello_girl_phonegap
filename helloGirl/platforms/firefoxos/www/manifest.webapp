@@ -10,5 +10,8 @@
         "name": "Hello Girl Team: Sarah Mackey, Alex Castelli, Joye Nettles, Alex Housand",
         "url": "https://hellogirlforsugar.wordpress.com/"
     },
-    "icons": {}
+    "icons": {
+        "60": "/icon/icon-60.png",
+        "128": "/icon/icon-128.png"
+    }
 }
