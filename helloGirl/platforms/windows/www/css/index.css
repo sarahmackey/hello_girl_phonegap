@@ -1,0 +1,127 @@
+﻿/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+
+.container {
+    margin: 0 auto;
+    width: 96.5%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: viewport.width;
+    height: 10%;
+    background-color: #274D8A;
+    z-index: 1000;
+}
+
+.title {
+    display: inline-block;
+    color: white;
+    font-family: Lobster;
+    font-size: 3.000em;
+    text-align: center;
+    margin-left: 34%; /*300 px before*/
+    margin-top: 1.5%;
+}
+
+.logo { /* floats logo left */
+    float: left;
+    margin-top: 1%;
+    height: 7.2%;
+    width: 7.2%;
+}
+
+.instructions_container {
+    background-color: lightblue;
+    color: navy;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3500em;
+    margin-top: -4.1%;
+    border-bottom: 1px solid #333;
+    box-shadow: 2px 2px 40px #000;
+}
+
+.main_container {
+    margin-top: 9.5%;
+    width: viewport.width;
+    height: viewport.height;
+    /*margin-left: -8px;*/
+    background-color: #FFDDEE;
+    color: #B2246B;
+}
+
+
+.col_3 {
+    height: 615px; /* needs to be the exact height of tablet*/
+    width: 32%;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+.main_container .item img {
+    width: 100%;
+    height: 100%;
+    /*margin-left: 0px;*/
+}
+
+.item_div {
+    float: left;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.col_2 {
+    width: 47%;
+    height: 610px;
+    overflow: scroll;
+    border: 2px solid black;
+}
+
+.clothing_div {
+    float: left;
+    margin-right: 5.5px;
+}
+
+.doll_div {
+    margin-left: 7px;
+}
+
+.doll_image img {
+    width: 350px;
+    height: 350px;
+}
+
+.code_div {
+    
+    float: right;
+    overflow: scroll;
+}
+
+.code_div ul{
+    list-style: none;
+}

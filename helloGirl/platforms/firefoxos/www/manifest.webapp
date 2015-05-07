@@ -1,0 +1,14 @@
+{
+    "launch_path": "/index.html",
+    "installs_allowed_from": [
+        "*"
+    ],
+    "version": "0.0.1",
+    "name": "HelloGirl",
+    "description": "An application to help introduce coding to young girls through a dress up doll.",
+    "developer": {
+        "name": "Hello Girl Team: Sarah Mackey, Alex Castelli, Joye Nettles, Alex Housand",
+        "url": "https://hellogirlforsugar.wordpress.com/"
+    },
+    "icons": {}
+}
