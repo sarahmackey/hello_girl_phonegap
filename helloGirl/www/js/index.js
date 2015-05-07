@@ -48,4 +48,13 @@ var app = {
     }
 };
 
+var viewport = {
+    width  : $(window).width(),
+    height : $(window).height()
+};
+
+
+//can access dimensions like this:
+//viewport.height
+
 app.initialize();
